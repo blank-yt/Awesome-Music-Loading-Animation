@@ -1,0 +1,49 @@
+body {
+  background: #1c1a1a;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.music-loader {
+  position: relative;
+  width: 11.25rem;
+  height: 11.25rem;
+  left: 1.875rem;
+}
+
+@keyframes dance {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80%;
+  }
+}
+
+.bar {
+  width: .75rem;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 0;
+  background: linear-gradient(to bottom, #800080, #dc143c);
+}
+
+.bar1 {
+  left: 0;
+  animation: dance .5s ease alternate infinite;
+}
+
+.bar2 {
+  left: 3.75rem;
+  animation: dance .5s .2s ease alternate infinite;
+}
+
+.bar3 {
+  left: 7.5rem;
+  animation: dance .5s .4s ease alternate infinite;
+}
